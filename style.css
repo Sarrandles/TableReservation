@@ -25,6 +25,9 @@ body {
 //having trouble with the z-index
 }
 
+.table:hover{
+  background-color: grey;
+}
 
 h1{
   text-align: center;
@@ -44,7 +47,7 @@ form{
   width: 500px;
   height: 500px;
   border-radius: 10px;
-  display: none;
+  display:none;
 }
 
 .disForm{
