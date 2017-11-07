@@ -4,4 +4,8 @@ $(document).ready(function() {
   $("form").show();
 
   });
+
+  $("button").click(function(){
+  $("form").hide();
+});
  });
