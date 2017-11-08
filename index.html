@@ -4,8 +4,10 @@
 
 <head>
     <link rel="stylesheet" type="text/css" href="style.css"/>
-    <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="script.js"></script>
@@ -22,32 +24,37 @@
 
 <div class= "flexCircles">
   <div class= "row">
-    <div class="table">1</div>
-    <div class="table">2</div>
-    <div class="table">3</div>
+    <div class="table" name="">1</div>
+    <div class="table" name ="">2</div>
+    <div class="table" name ="">3</div>
   </div>
   <div class= "row">
-      <div class="table">4</div>
-      <div class="table">5</div>
-      <div class="table">6</div>
+      <div class="table" name="">4</div>
+      <div class="table" name="">5</div>
+      <div class="table" name="">6</div>
   </div>
   <div class="row">
-      <div class="table">7</div>
-      <div class="table">8</div>
-      <div class="table">9</div>
+      <div class="table" name="">7</div>
+      <div class="table" name="">8</div>
+      <div class="table" name="">9</div>
   </div>
 </div>
 
 <div class="disForm">
   <form>
+
+    <div id="close">
+      <i class="material-icons" onclick="function()">close</i>
+    </div>
+
     <h2>New Reservation</h2>
 
-    <input type="text" name="yourName" value="Last, First"></><br>
-    <input type="text" number="phoneNumber" value="XXX-XXX-XXXX"></><br>
-    <input type="text" numberOfGuests="numberOfGuests" value="How many in your party?"></>
+    <input id="nameId" type="text" name="yourName" placeholder="Name"></><br>
+    <input id="phoneId" type="text" number="phoneNumber" placeholder="Phone Number"></><br>
+    <input id="guestNumber" type="text" numberOfGuests="numberOfGuests" placeholder="How many in your party?"></>
 
     <div class="button">
-      <button type="save">Save</button>
+      <button type="button" class="submit-button">Save</button>
     </div>
 
   </form>
